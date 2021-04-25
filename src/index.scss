@@ -1,0 +1,122 @@
+@import '~bootstrap/scss/bootstrap';
+
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #e8e8e8;
+}
+
+.Task {
+  &_app {
+    background-image: linear-gradient(
+        90deg,
+        transparent 715px,
+        #ed82ad 715px,
+        #ed82ad 718px,
+        transparent 718px
+      ),
+      linear-gradient(#bbb 1px, transparent 0px), linear-gradient(90deg, #bbb 1px, transparent 0px);
+    background-size: 100% 100%, 20px 20px, 20px 20px;
+    background-position: 0 0, -1px -1px, -1px 1px;
+    width: 800px;
+    min-height: 500px;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  }
+  &__form {
+    margin-top: 15px;
+    text-align: center;
+  }
+  &__list {
+    display: flex;
+    margin: 15px 0;
+  }
+  &__input {
+    width: 300px;
+    height: 35px;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+    background: transparent;
+    box-shadow: inset 4px 4px 5px rgba(95, 93, 91, 0.8), 1px 1px 5px rgba(255, 255, 255, 1);
+    &-edit {
+      margin-left: 40px;
+    }
+  }
+  &__button {
+    width: 100px;
+    height: 35px;
+    border: none;
+    background: transparent;
+    box-shadow: -3px -3px 5px rgb(148, 148, 148), 3px 3px 5px black;
+    transition: 0.2s all linear;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__length {
+    font-size: 20px;
+    color: black;
+    margin-bottom: 10px;
+  }
+}
+
+.img {
+  position: fixed;
+  top: -85px;
+  right: -8%;
+}
+
+.btn {
+  &__Del {
+    position: absolute;
+    background: red;
+    color: white;
+    left: 60%;
+  }
+  &__Edit {
+    position: absolute;
+    background: blue;
+    color: white;
+    left: 65%;
+  }
+  &__Comp {
+    position: absolute;
+    background: green;
+    color: white;
+    left: 76%;
+  }
+}
+
+.text-uncompleted {
+  font-size: 25px;
+  padding-left: 10px;
+  color: blue;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.text-completed {
+  font-size: 25px;
+  padding-left: 10px;
+  color: blue;
+  text-decoration: line-through;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.link-button {
+  color: black;
+  text-decoration: none !important;
+}
+.page-btn {
+  position: fixed;
+  left: 1%;
+  top: 1%;
+  background: transparent;
+  box-shadow: -1px -1px 4px rgb(148, 148, 148), 1px 1px 4px black;
+}
